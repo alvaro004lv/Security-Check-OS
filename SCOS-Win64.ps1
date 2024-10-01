@@ -16,7 +16,7 @@ $encryptedVolumes = $bitlockerVolumes | Where-Object { $_.ProtectionStatus -eq '
 $unprotectedVolumes = $bitlockerVolumes | Where-Object { $_.ProtectionStatus -eq 'Off' }
 
 if ($encryptedVolumes.Count -gt 0 -and $unprotectedVolumes.Count -gt 0) {
-    Write-Host "Algunos discos están encriptados y otros no:" -ForegroundColor Yellow
+    Write-Host "Algunos discos estan encriptados y otros no:" -ForegroundColor Yellow
     foreach ($volume in $encryptedVolumes) {
         Write-Host " - $($volume.MountPoint): Encriptado"
     }
@@ -24,7 +24,7 @@ if ($encryptedVolumes.Count -gt 0 -and $unprotectedVolumes.Count -gt 0) {
         Write-Host " - $($volume.MountPoint): No encriptado"
     }
 } elseif ($encryptedVolumes.Count -gt 0) {
-    Write-Host "Todos los discos están encriptados:" -ForegroundColor Green
+    Write-Host "Todos los discos estan encriptados:" -ForegroundColor Green
     foreach ($volume in $encryptedVolumes) {
         Write-Host " - $($volume.MountPoint): Encriptado"
     }
