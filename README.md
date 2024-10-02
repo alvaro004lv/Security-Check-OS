@@ -20,7 +20,7 @@ Security Check OS es una herramienta en PowerShell que realiza un análisis de s
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/tuusuario/Security-Check-OS.git
+   git clone https://github.com/alvaro004lv/Security-Check-OS.git
 
 ## Uso
 
