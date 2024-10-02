@@ -1,6 +1,6 @@
 # Security Check OS
 
-Security Check OS es una herramienta en PowerShell que realiza un análisis de seguridad en sistemas operativos Windows. Este script comprueba actualizaciones del sistema, estado de BitLocker, cortafuegos, software obsoleto, estado de Windows Defender, permisos en carpetas críticas y más.
+Security Check OS es una herramienta en PowerShell que realiza un análisis de seguridad en sistemas operativos Windows. Este script comprueba actualizaciones del sistema, estado de BitLocker, cortafuegos y más.
 
 ## Requisitos
 
@@ -21,3 +21,15 @@ Security Check OS es una herramienta en PowerShell que realiza un análisis de s
 1. Clona este repositorio en tu máquina local:
    ```bash
    git clone https://github.com/tuusuario/Security-Check-OS.git
+
+## Uso
+
+1. Entra en una terminal de PowerShell como administrador y navega al directorio donde se clonó ell repositorio:
+    ```bash
+    cd Security-Check-OS
+2. Si la ejecución de scripts está deshabilitada, habilítala con el siguiente comando (ejecutar como administrador):
+    ```bash 
+    Set-ExecutionPolicy RemoteSigned
+3. Ejecuta el script en PowerShell:
+    ```bash
+    .\SCOS-Win64.ps1
